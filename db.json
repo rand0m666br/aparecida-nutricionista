@@ -1,0 +1,39 @@
+{
+    "profile": [
+        {
+            "nome": "Paulo",
+            "peso": 100,
+            "altura": 2.00,
+            "gordura": 10,
+            "imc": 25.00
+        },
+        {
+            "nome": "João",
+            "peso": 80,
+            "altura": 1.72,
+            "gordura": 40,
+            "imc": 27.04
+        },
+        {
+            "nome": "Erica",
+            "peso": 54,
+            "altura": 1.64,
+            "gordura": 14,
+            "imc": 20.08
+        },
+        {
+            "nome": "Douglas",
+            "peso": 85,
+            "altura": 1.73,
+            "gordura": 24,
+            "imc": 28.40
+        },
+        {
+            "nome": "Tatiana",
+            "peso": 46,
+            "altura": 1.55,
+            "gordura": 19,
+            "imc": 19.15
+        }
+    ]
+}
