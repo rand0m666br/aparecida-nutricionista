@@ -13,6 +13,7 @@ const novaLinha = (nome, peso, altura, gordura, imc) => {
     linhaNovoPaciente.innerHTML = conteudo;
     return linhaNovoPaciente;
 }
+
 const tabela = document.querySelector("#tabela-pacientes");
 
 const http = new XMLHttpRequest();
