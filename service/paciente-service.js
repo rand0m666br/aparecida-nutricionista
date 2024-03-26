@@ -8,6 +8,8 @@ const novaLinha = (nome, peso, altura, gordura, imc) => {
     <td class="info-altura">${altura}</td>
     <td class="info-gordura">${gordura}</td>
     <td class="info-imc">${imc}</td>
+    <td class="info-acao"><a href="">Editar</a></td>
+    <td class="info-acao"><a href="">Excluir</a></td>
     `;
 
     linhaNovoPaciente.innerHTML = conteudo;
