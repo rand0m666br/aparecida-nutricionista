@@ -35,9 +35,28 @@ const detalhaPaciente = (id) => {
     })
 }
 
+const atualizaPaciente = (id, nome, peso, altura, gordura, imc) => {
+    return fetch(`http://localhost:3000/profile/${id}`, {
+        method: 'PUT',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+            nome: nome,
+            peso: peso,
+            altura: altura,
+            gordura: gordura,
+            imc: imc
+        })
+    }).then(resposta => {
+        return resposta.json()
+    })
+}
+
 export const pacienteService = {
     listaPacientes,
     criarPaciente,
     removerPaciente,
-    detalhaPaciente
+    detalhaPaciente,
+    atualizaPaciente
 }

@@ -1,11 +1,11 @@
 {
   "profile": [
     {
-      "nome": "Paulo",
-      "peso": 100,
-      "altura": 2,
-      "gordura": 10,
-      "imc": 25,
+      "nome": "Seu Paulo",
+      "peso": "101",
+      "altura": "2",
+      "gordura": "10",
+      "imc": "25.25",
       "id": "212a"
     },
     {
@@ -31,6 +31,14 @@
       "gordura": 24,
       "imc": 28.4,
       "id": "ba16"
+    },
+    {
+      "nome": "Nome",
+      "peso": "80",
+      "altura": "1.7",
+      "gordura": "26",
+      "imc": "24.22",
+      "id": "2f7f"
     }
   ]
 }

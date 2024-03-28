@@ -10,11 +10,10 @@ const novaLinha = (nome, peso, altura, gordura, imc, id) => {
     <td class="info-altura">${altura}</td>
     <td class="info-gordura">${gordura}</td>
     <td class="info-imc">${imc}</td>
-    <td class="info-acao"><a href="">Editar</a></td>`;
+    <td class="info-acao"><a href="../editar.html?id=${id}">Editar</a></td>`;
 
     linhaNovoPaciente.innerHTML = conteudo;
     linhaNovoPaciente.dataset.id = id;
-    // console.log(linhaNovoPaciente);
     return linhaNovoPaciente;
 }
 
@@ -23,8 +22,8 @@ const tabela = document.querySelector("#tabela-pacientes");
 // Remover paciente
 tabela.addEventListener('dblclick', (evento) => {
     const linhaPaciente = evento.target.closest("[data-id]");
-    console.log(linhaPaciente)
     let id = linhaPaciente.dataset.id;
+
     pacienteService.removerPaciente(id).then(() => {
         linhaPaciente.remove();
     })
